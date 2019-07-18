@@ -1,0 +1,49 @@
+$Pcolor:#0984e3;
+$Scolor:#2f3542;
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background:linear-gradient(0deg,$Scolor,$Pcolor);
+}
+div.content{
+    position: relative;
+    height:100%;
+}
+div.item{
+    display:inline-flex;
+    height:300px;
+    width: 250px;
+    padding:5px;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin:10px;
+}
+img.pImage{
+    position: relative;
+    height:90%;
+    box-shadow: 10px 10px 10px $Scolor;
+    margin:0px 10px;
+}
+div.pDetails{
+    position: relative;
+    width:100%;
+    padding:10px;
+}
+div.pFunctions{
+    position:relative;
+    width:0%;
+    height:100px;
+    transition: 0.5s;
+    z-index:9;
+    margin:10px;
+    background: lighten($color: $Pcolor, $amount: 20%);
+    overflow: hidden;
+    
+}
+div.item:hover div.pFunctions{
+    width:100%;
+    padding:10px;
+}

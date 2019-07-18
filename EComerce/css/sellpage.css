@@ -1,0 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(#2f3542), to(#0984e3));
+  background: linear-gradient(0deg, #2f3542, #0984e3);
+}
+
+div.content {
+  position: relative;
+  height: 100%;
+}
+
+div.item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 300px;
+  width: 250px;
+  padding: 5px;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+
+img.pImage {
+  position: relative;
+  height: 90%;
+  -webkit-box-shadow: 10px 10px 10px #2f3542;
+          box-shadow: 10px 10px 10px #2f3542;
+  margin: 0px 10px;
+}
+
+div.pDetails {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+div.pFunctions {
+  position: relative;
+  width: 0%;
+  height: 100px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 9;
+  margin: 10px;
+  background: #5ab3f8;
+  overflow: hidden;
+}
+
+div.item:hover div.pFunctions {
+  width: 100%;
+  padding: 10px;
+}
+/*# sourceMappingURL=sellpage.css.map */

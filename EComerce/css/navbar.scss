@@ -1,0 +1,75 @@
+$Pcolor:#0984e3;
+$Scolor:#2f3542;
+$anime:#f53b57;
+div.navIcon{
+    height: 40px;
+    width:40px;
+    border:none;
+    padding:0px;
+    margin:0px;
+}
+div.topbarner div.navIcon{
+    position: relative;
+    left:0px;
+}
+div.navclose{
+    transition:0.5s;
+}
+div.navclose:hover :nth-child(1){
+    transition:0.5s;
+    transform: rotate(45deg) translateY(5px);
+}
+div.navclose:hover :nth-child(2){
+    transition:0.5s;
+    display: none;
+}
+div.navclose:hover :nth-child(3){
+    transition:0.5s;
+    transform: rotate(-45deg) translateY(-5px);
+}
+div.navIcon .line{
+    position: relative;
+    width: 100%;
+    height:5px;
+    border-radius:10px;
+    margin-bottom: 5px;
+    box-shadow:5px 5px 5px $Scolor;
+}
+.white{
+    background: white;
+}
+div.sidenav{
+    height:100%;
+    width:200px;
+    min-width:100px;
+    max-width: 40%;
+    position:fixed;
+    background: $Scolor;
+    padding:30px;
+    z-index:10;
+}
+ul.navlist{
+    list-style: none;
+    position: relative;
+    width:100%;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+li{
+    padding:10px;
+    border:1px solid white;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-family: cursive;
+    transition: 1s;
+    text-align: center;
+}
+a li:hover{
+    background: white;
+    transition:1s;
+    color:$Pcolor;
+    border:1px solid $Pcolor;   
+}

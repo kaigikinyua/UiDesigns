@@ -1,0 +1,94 @@
+div.navIcon {
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+div.topbarner div.navIcon {
+  position: relative;
+  left: 0px;
+}
+
+div.navclose {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+div.navclose:hover :nth-child(1) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(45deg) translateY(5px);
+          transform: rotate(45deg) translateY(5px);
+}
+
+div.navclose:hover :nth-child(2) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: none;
+}
+
+div.navclose:hover :nth-child(3) {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(-45deg) translateY(-5px);
+          transform: rotate(-45deg) translateY(-5px);
+}
+
+div.navIcon .line {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  -webkit-box-shadow: 5px 5px 5px #2f3542;
+          box-shadow: 5px 5px 5px #2f3542;
+}
+
+.white {
+  background: white;
+}
+
+div.sidenav {
+  height: 100%;
+  width: 200px;
+  min-width: 100px;
+  max-width: 40%;
+  position: fixed;
+  background: #2f3542;
+  padding: 30px;
+  z-index: 10;
+}
+
+ul.navlist {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  padding: 10px;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-family: cursive;
+  -webkit-transition: 1s;
+  transition: 1s;
+  text-align: center;
+}
+
+a li:hover {
+  background: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #0984e3;
+  border: 1px solid #0984e3;
+}
+/*# sourceMappingURL=navbar.css.map */
