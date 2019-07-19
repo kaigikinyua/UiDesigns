@@ -1,0 +1,70 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(red));
+  background: linear-gradient(0deg, black, red);
+}
+
+div.topbarner {
+  position: fixed;
+  background: black;
+  color: red;
+  width: 100%;
+  padding: 10px;
+}
+
+div.bottombarner {
+  padding: 10px;
+  width: 100vw;
+  color: white;
+  background: black;
+  position: fixed;
+  bottom: 0px;
+}
+
+ul.controls {
+  list-style-type: none;
+}
+
+ul.controls li {
+  display: inline-block;
+  margin: 0px 10px;
+  padding: 10px 5px;
+  background: #333333;
+}
+
+div.game {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 70%;
+  width: 70%;
+  background: gray;
+}
+
+div.trac {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  background: black;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+div.car {
+  position: fixed;
+  bottom: 20px;
+  background: white;
+  height: 50px;
+  width: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+/*# sourceMappingURL=game.css.map */

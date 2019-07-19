@@ -1,0 +1,59 @@
+$secondary:red;
+$primary:black;
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background: linear-gradient(0deg,$primary,$secondary);
+}
+div.topbarner{
+    position:fixed;
+    background: $primary;
+    color:$secondary;
+    width:100%;
+    padding: 10px;
+}
+div.bottombarner{
+    padding:10px;
+    width:100vw;
+    color:white;
+    background:$primary;
+    position:fixed;
+    bottom:0px;
+}
+ul.controls{
+    list-style-type: none;
+}
+ul.controls li{
+    display: inline-block;
+    margin:0px 10px;
+    padding:10px 5px;
+    background: lighten($color: $primary, $amount: 20);
+}
+div.game{
+    position:fixed;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height: 70%;
+    width:70%;
+    background: gray;
+}
+div.trac{
+    position: relative;
+    width:80%;
+    height:100%;
+    background: black;
+    left:50%;
+    transform: translateX(-50%);
+}
+div.car{
+    position: fixed;
+    bottom:20px;
+    background: white;
+    height:50px;
+    width:30px;
+    left:50%;
+    transform: translateX(-50%);
+}
