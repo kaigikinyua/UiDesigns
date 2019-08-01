@@ -11,35 +11,48 @@
 </head>
 <body>
     <div class="topbarner">
-        <h1>Antony <i>Kaigi</i></h1>
-        <div class="navicon">
+        <div class="navicon turnc" onclick="show('navbar')">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <div class="contactIcon">
+        <center><h1 class='center'>Chat <i>Room</i></h1></center>
+        <div class="contactIcon" onclick="show('contactlist')">
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
         </div>
-        <div class="contactList">
+        <div class="contactList" id='contactlist'>
+            <div class="navicon right close" onclick="hide('contactlist')">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <ul class="contactList">
-                <li>kaigikinyua@gmail.com</li>
-                <li>kaigikinyua</li>
-                <li>@tonnymacoin</li>
-                <li>tonnymacoin</li>
+                    <li>kaigikinyua@gmail.com</li>
+                    <li>kaigikinyua</li>
+                    <li>@tonnymacoin</li>
+                    <li>tonnymacoin</li>
             </ul>
         </div>
     </div>
-    <div class="sidebar">
+    <div class="sidebar" id='navbar'>
+        <div class="navicon right close" onclick="hide('navbar')">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <img src="" alt="" class="icon">
         <ul class="navlist">
             <a href="index.html"><li>Home</li></a>
             <a href="projects.html"><li>Projects</li></a>
-            <a href="#"><li class='active'>Chat</li></a>
+            <a href="#"><li class="active">Chat</li></a>
             <a href="#"><li>Admin</li></a>
         </ul>
-    </div>
+        <div class="brand">
+            <h4>Antony <i>Kaigi</i></h4>
+        </div>
     <div class="spacing"></div>
+    <script src='js/elements.js'></script>
 </body>
 </html>

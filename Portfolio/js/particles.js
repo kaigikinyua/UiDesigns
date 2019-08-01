@@ -9,7 +9,7 @@ function circle(x,y){
     this.dy=Math.round(Math.random()*3)
     //colors
     this.y=y;this.x=x;
-    var color=['white','lightgreen','red'];
+    var color=['white','#77e905','#FFAAAA'];
     this.color=Math.floor(Math.random()*color.length);
     this.draw=function(){
         c.beginPath();
@@ -35,7 +35,7 @@ function circle(x,y){
         this.draw();
     }
 }
-var m=[];var nO=40;
+var m=[];var nO=100;
 for (var i=0;i<=nO;i++){
     var x=Math.round(Math.random()*(canvas.offsetWidth-1));
     var y=Math.round(Math.random()*(canvas.offsetHeight-5));
