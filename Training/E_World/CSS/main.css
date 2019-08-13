@@ -1,0 +1,145 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url("../Images/f1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+div.topbarner {
+  width: 100%;
+  color: white;
+  font-family: cursive;
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  z-index: 10;
+  background: #2F3542;
+  padding: 10px;
+  -webkit-box-shadow: 5px 2px 10px 5px #1091f6;
+          box-shadow: 5px 2px 10px 5px #1091f6;
+}
+
+div.topbarner i {
+  color: #0984e3;
+}
+
+div.landing {
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+}
+
+div.centercard {
+  max-width: 300px;
+  min-width: 300px;
+  max-height: 60%;
+  color: white;
+  font-family: cursive;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2F3542), to(#0984e3));
+  background: linear-gradient(0deg, #2F3542, #0984e3);
+}
+
+div.centercard img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  opacity: 1;
+}
+
+div.module {
+  color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: cursive;
+  background: rgba(0, 0, 0, 0.9);
+  max-width: 800px;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../Images/race.jpg");
+}
+
+div.module:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2F3542), to(black));
+  background: linear-gradient(0deg, #2F3542, black);
+}
+
+div.module h3 {
+  margin: 10px;
+  color: #0984e3;
+}
+
+div.module div.content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}
+
+div.module div.content p {
+  position: relative;
+  width: 60%;
+}
+
+div.image {
+  position: absolute;
+  left: 60%;
+  top: 0px;
+  height: 100%;
+  width: 40%;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg1 {
+  background-image: url("../Images/godofwar.jpg");
+}
+
+.bg2 {
+  background-image: url("../Images/superman.jpg");
+}
+
+.bg3 {
+  background-image: url("../Images/race.jpg");
+}
+
+div.floatingbutton {
+  background: #0984e3;
+  padding: 5px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+  position: fixed;
+  height: 30px;
+  width: 30px;
+  bottom: 30px;
+  left: 30px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=main.css.map */

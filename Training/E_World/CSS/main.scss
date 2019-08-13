@@ -1,0 +1,120 @@
+$primary:#2F3542;
+$secondary:#0984e3;
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-image: url('../Images/f1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center;
+}
+div.topbarner{
+    width:100%;
+    color:white;
+    font-family: cursive;
+    position:fixed;
+    top:0px;
+    text-align: center;
+    z-index: 10;
+    background:$primary;
+    padding:10px;
+    box-shadow: 5px 2px 10px 5px lighten($secondary,5);
+}
+div.topbarner i{
+    color:$secondary;
+}
+div.landing{
+    height:100vh;
+    width:100vw;
+    z-index:5;
+}
+div.centercard{
+    max-width:300px;
+    min-width:300px;
+    max-height: 60%;
+    color:white;
+    font-family: cursive;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding:10px;
+    background:linear-gradient(0deg,$primary,$secondary);
+}
+div.centercard img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+    border:2px solid white;
+    opacity:1;
+}
+div.module{
+    color:white;
+    margin-bottom: 20px;
+    padding:10px;
+    font-family: cursive;
+    background: rgba(0,0,0,0.9);
+    max-width: 800px;
+    position: relative;
+    transform:translateX(-50%);
+    left:50%;  
+    transition:1s;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-image:url('../Images/race.jpg'); 
+}
+div.module:hover{
+    transition:5s;
+    background:linear-gradient(0deg,$primary,black);
+}
+div.module h3{
+    margin:10px;
+    color:$secondary;
+}
+div.module div.content{
+    display:inline-flex;
+    height:100%;
+    width:100%;
+}
+div.module div.content p{
+    position: relative;
+    width:60%;
+}
+div.image{
+    position: absolute;
+    left:60%;
+    top:0px;
+    height:100%;
+    width:40%;
+    background-position: center;
+    background-size:cover;
+}
+.bg1{
+    background-image:url('../Images/godofwar.jpg');
+}
+.bg2{
+    background-image:url('../Images/superman.jpg');
+}
+.bg3{
+    background-image:url('../Images/race.jpg');
+}
+div.floatingbutton{
+    background: $secondary;
+    padding:5px;
+    text-align: center;
+    justify-content: center;
+    color:white;
+    font-family: cursive;
+    font-size: 20px;
+    position: fixed;
+    height:30px;
+    width:30px;
+    bottom:30px;
+    left:30px;
+    border-radius: 50%;
+
+}
