@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="Images/me.jpg" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/CSS/index.css"/>
+</head>
+    <body>
+        <!--Topnav-->
+        <div class="topnav">
+            <ul class="nav">
+                <a href="#"><li>Home</li></a>
+                <a href="projects.html"><li>Projects</li></a>
+                <a href="message.html"><li>Message</li></a>
+            </ul>
+            <div class="signature" onclick="show('contacts')">
+                <h6>Antony Kaigi</i></h6>
+                <img src="Images/me.jpg" alt="" class="icon">
+            </div>
+        </div>
+        <div class="contacts" id='contacts'>
+            <h3>Antony Kaigi</h3>
+            <h2>Contacts</h2>
+            <ul class="list">
+                <li><img src="Images/gitIcon.png" alt="GitHub" class="icon"> kaigikinyua</li>
+                <li><img src="Images/twitter.png" alt="Twitter" class="icon"> @tonymacoin</li>
+                <li><img src="Images/twitter.png" alt="facebook" class="icon"> tonny macoin</li>
+            </ul>
+        </div>
+        <!--Landing Page-->
+        <div class="landing" onclick="hide('contacts')">
+            <div class="slides">
+                <input class="checkbox" type="radio" name="r" id="r1" checked/>
+                <input class="checkbox" type="radio" name="r" id="r2"/>
+                <input class="checkbox" type="radio" name="r" id="r3"/>
+                <input class="checkbox" type="radio" name="r" id="r4"/>
+                <div class="slide" style="background-image:url('/Images/1.jpg') ">
+                    <div class="slideText">Lorem ipsum, <i>dolor</i> sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="slide" style="background-image:url('/Images/2.png') ">
+                    <div class="slideText">Lorem ipsum, <i>dolor</i> sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="slide" style="background-image:url('/Images/3.jpg') ">
+                    <div class="slideText">Lorem ipsum, <i>dolor</i> sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="slide" style="background-image:url('/Images/4.png') ">
+                    <div class="slideText">Lorem ipsum, <i>dolor</i> sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
+            <div class="slidenav">
+                <label class="nav" for="r1"></label>
+                <label class="nav" for="r2"></label>
+                <label class="nav" for="r3"></label>
+                <label class="nav" for="r4"></label>
+            </div>
+        </div>
+
+        <!--Developer Languages-->
+        <div class="developer">
+            <div class="language web">
+                <h3>Web developer.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda deleniti delectus iusto ad sunt saepe! Veritatis dicta error maxime, adipisci asperiores quos in recusandae laborum harum magnam tenetur modi.</p>
+            </div>
+            <div class="language desktop">
+                <h3>Desktop developer.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda deleniti delectus iusto ad sunt saepe! Veritatis dicta error maxime, adipisci asperiores quos in recusandae laborum harum magnam tenetur modi.</p>
+            </div>
+            <div class="language editing">
+                <h3>Content Editor.</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus assumenda deleniti delectus iusto ad sunt saepe! Veritatis dicta error maxime, adipisci asperiores quos in recusandae laborum harum magnam tenetur modi.</p>
+            </div>
+        </div>
+        <!--Reviews-->
+        <div class="reviews">
+            <h2>Reviews</h2><br/>
+            <div class="review">
+                <h3>User One</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos hic similique ratione dolore quam? Eveniet, quis, rerum nam modi beatae fugit nihil reprehenderit accusantium quae tempore totam, vitae sit eaque.</p>
+            </div>
+            <div class="review">
+                <h3>User Two</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos hic similique ratione dolore quam? Eveniet, quis, rerum nam modi beatae fugit nihil reprehenderit accusantium quae tempore totam, vitae sit eaque.</p>
+            </div>
+            <div class="review">
+                <h3>User Three</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos hic similique ratione dolore quam? Eveniet, quis, rerum nam modi beatae fugit nihil reprehenderit accusantium quae tempore totam, vitae sit eaque.</p>
+            </div>
+            <div class="review">
+                <h3>User Four</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos hic similique ratione dolore quam? Eveniet, quis, rerum nam modi beatae fugit nihil reprehenderit accusantium quae tempore totam, vitae sit eaque.</p>
+            </div>
+            <div class="review">
+                <h3>User Five</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos hic similique ratione dolore quam? Eveniet, quis, rerum nam modi beatae fugit nihil reprehenderit accusantium quae tempore totam, vitae sit eaque.</p>
+            </div>
+            <div class="review">
+                <h3>User Six</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos hic similique ratione dolore quam? Eveniet, quis, rerum nam modi beatae fugit nihil reprehenderit accusantium quae tempore totam, vitae sit eaque.</p>
+            </div>
+        </div>
+        <div class="reviewForm"></div>
+        <form action="" class="review">
+            <input type="text" name="username" placeholder="Name..."/>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="type your message here"></textarea>
+            <input type="submit" class="btn" value="Send"/>
+        </form>
+    </body>
+    <script src="JS/useraction.js"></script>
+</html>

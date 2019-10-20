@@ -4,33 +4,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Animations</title>
-    <link rel="stylesheet" href="static/CSS/index.css"/>
+    <link rel="stylesheet" href="static/CSS/index.css">
 </head>
 <body>
+    <div class="topnav"></div>
     <div class="landing">
-        <div id="1" class="show" style="background-image:url('static/Images/1.jpg');" onclick="slide(1,2);"></div>
-        <div id="2" class="slide" style="background-image:url('static/Images/2.jpg');" onclick="slide(2,3);"></div>
-        <div id="3" class="slide" style="background-image:url('static/Images/3.jpg');" onclick="slide(3,4);"></div>
-        <div id="4" class="slide" style="background-image:url('static/Images/4.jpg');" onclick="slide(4,1);"></div>
+        <div class="slide">
+            <input type="radio"  name="r" checked id="r1"/>
+            <input type="radio"  name="r" id="r2"/>
+            <input type="radio"  name="r" id="r3"/>
+            <input type="radio"  name="r" id="r4"/>
+            <div class="s s1">
+                <img src="static/Images/1.jpg" alt="">
+            </div>
+            <div class="s s2">
+                <img src="static/Images/2.jpg" alt="">
+            </div>
+           <div class="s s3">
+                <img src="static/Images/3.jpg" alt="">
+           </div>
+            <div class="s s4">
+                <img src="static/Images/4.jpg" alt="">
+            </div>
+        </div>
     </div>
-    <script>
-        
-        function slider(){
-            var i=0;
-            if(i==4){
-                document.getElementById('2').classList.add('show')
-                document.getElementById('3').classList.remove('show')
-                i=0
-                console.log("I==4")
-            }else{
-                document.getElementById("2").classList.remove('show')
-                document.getElementById("3").classList.add('show')
-                console.log("I<4")
-            }
-            i++;
-            console.log(i)
-        }
-    </script>
+    <div class="labels">
+        <label for="r1" class="nav"></label>
+        <label for="r2" class="nav"></label>
+        <label for="r3" class="nav"></label>
+        <label for="r4" class="nav"></label>
+    </div>
 </body>
-    <script src="static/JS/animations.js"></script>
 </html>

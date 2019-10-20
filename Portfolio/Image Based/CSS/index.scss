@@ -1,0 +1,261 @@
+@import 'colors';
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background: whitesmoke;
+}
+//put this section in shared.scss
+div.topnav{
+    position: fixed;
+    top:0px;
+    padding:10px;
+    width:100vw;
+    background: $primary;
+    z-index: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+a{
+    color:white;
+}
+ul.nav{
+    list-style: none;
+}
+div.signature{
+    position: relative;
+    top:50%;
+    transform:translateY(-50%);
+    text-align: center;
+    vertical-align: middle;
+}
+ul.nav li{
+    display: inline-block;
+    padding:10px 5px;
+    background:none;
+    color:$secondary;
+    font-family:Arial;
+}
+div.signature h6{
+    font-weight: bolder;
+    font-family: cursive;
+    font-style: italic;
+    font-size:0.7em;
+}
+img.icon{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+}
+ul.list{
+    list-style-type:none;
+}
+ul.list li{
+    margin:10px 0px;
+}
+//end of shared elements
+div.landing{
+    z-index: 10;
+    height: 100vh;
+    width:100vw;
+    overflow: hidden;
+}
+div.slides{
+    position: relative;
+    width:400%;
+    height:100%;
+    display: flex;
+    transition: 1s;
+}
+div.slide{
+    position: relative;
+    height:100%;
+    width:25%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition:1s;
+}
+div.slideText{
+    position: relative;
+    left:50%;
+    top:60%;
+    transform:translate(-50%,-50%);
+    color:white;
+    background:rgba(0,0,0,0.6);
+    max-width:200px;
+    padding:10px;
+    text-align: center;
+}
+div.slideText i{
+    color:lightgreen;
+}
+div.slidenav{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+    display:flex;
+}
+label.nav{
+    height:10px;
+    width:40px;
+    border:2px solid white;
+    margin:0px 5px;
+    transition: 0.6s;
+}
+label.nav:hover{
+    background:white;
+}
+input.checkbox{
+    width:0px;
+    position: absolute;
+}
+#r1:checked ~ .slide{
+    left:0%;
+}
+#r2:checked ~ .slide{
+    left:-25%;
+}
+#r3:checked ~ .slide{
+    left:-50%;
+}
+#r4:checked ~ .slide{
+    left:-75%;
+}
+div.contacts{
+    position:fixed;
+    width:800px;
+    left:50%;
+    transform:translateX(-50%);
+    text-align: center;
+    background:rgb(50,50,70);
+    color:white;
+    padding:20px 10px;
+    bottom:0px;
+    max-height: 200px;
+    display:none;
+    animation: 1.5s conslide 0s;
+    z-index: 11;
+}
+div.contacts h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+div.contacts h2{
+    font-family: cursive;
+}
+@keyframes conslide{
+    from{
+        bottom:-100px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
+div.reviews{
+    position: relative;
+    max-width:800px;
+    display:flex;
+    overflow: hidden;
+    left:50%;
+    transform:translateX(-50%);
+}
+div.reviews h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin:20px 0px;
+    display: block;
+}
+div.review{
+    padding:10px;
+    margin:0px 10px;
+    min-width:250px;
+    position: relative;
+}
+div.review h3{
+    margin-bottom:10px;
+    font-family: cursive;
+}
+div.review p{
+    margin-left:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form.review{
+    max-width:800px;
+    display: none;
+}
+form.review input{
+    display:block;
+    margin:10px 0px;
+    min-width:300px;
+    padding:10px;
+    position: relative;
+    left:50%;
+    transform:translateX(-50%);
+}
+form.review textarea{
+    padding:10px;
+    min-width:300px;
+    height:60px;
+    position: relative;
+    left:50%;
+    transform:translateX(-50%);
+}
+div.developer{
+    max-width:800px;
+    position: relative;
+    left:50%;
+    transform:translateX(-50%);
+    margin:20px 0px;
+    background: white;
+}
+div.language{
+    margin:10px 0px;
+}
+div.language{
+    padding:20px 10px;
+}
+div.language h3{
+    margin-bottom: 20px;
+    font-family: cursive;
+    font-weight: lighter;
+}
+div.language p{
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+}
+.web h3{
+    color:rgb(64, 70, 240);
+}
+.desktop h3{
+    color:rgb(50,255,50);
+}
+.editing h3{
+    color: red;
+}
+.web p{
+    border-left:1px solid rgb(64, 70, 240);
+}
+.desktop p{
+    border-left: 1px solid rgb(50,255,50);
+}
+.editing p{
+    border-left: 1px solid red;
+}
+
+@media only screen and (max-width:600px){
+    div.reviews{
+        display: block;
+        margin:20px 0px;
+        min-width:100%;
+        min-height:50px;
+        overflow:hidden;
+    }
+    div.review p{
+        padding:10px;
+        border-left:1px solid $secondary;
+    }
+}
