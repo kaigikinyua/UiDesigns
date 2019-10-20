@@ -275,16 +275,15 @@ div.developer {
 }
 
 div.language {
-  margin: 10px 0px;
-}
-
-div.language {
-  padding: 20px 10px;
+  padding: 10px 5px;
 }
 
 div.language h3 {
-  margin-bottom: 20px;
-  font-family: cursive;
+  font-family: monospace;
+}
+
+div.language h4 {
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 
@@ -294,28 +293,28 @@ div.language p {
   padding: 10px;
 }
 
-.web h3 {
-  color: #4046f0;
+div.languages {
+  margin: 10px 20px;
 }
 
-.desktop h3 {
-  color: #32ff32;
+.py p {
+  border-left: 2px solid green;
 }
 
-.editing h3 {
-  color: red;
+.js p {
+  border-left: 2px solid yellow;
 }
 
-.web p {
-  border-left: 1px solid #4046f0;
+.html p {
+  border-left: 2px solid #4046f0;
 }
 
-.desktop p {
-  border-left: 1px solid #32ff32;
+.video p {
+  border-left: 2px solid red;
 }
 
-.editing p {
-  border-left: 1px solid red;
+.photo p {
+  border-left: 2px solid orange;
 }
 
 @media only screen and (max-width: 600px) {
