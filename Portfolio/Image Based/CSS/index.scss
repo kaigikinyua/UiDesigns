@@ -4,7 +4,7 @@
     margin:0px;
 }
 body{
-    background: whitesmoke;
+    background: $primary;
 }
 //put this section in shared.scss
 div.topnav{
@@ -15,10 +15,11 @@ div.topnav{
     background: $primary;
     z-index: 7;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    box-shadow:10px 0px 20px 0px $l_Accent;
 }
 a{
-    color:white;
+    color:$p_text;
 }
 ul.nav{
     list-style: none;
@@ -34,18 +35,24 @@ ul.nav li{
     display: inline-block;
     padding:10px 5px;
     background:none;
-    color:$secondary;
+    color:$p_text;
     font-family:Arial;
+    transition:0.9s;
+    border:1px solid transparent;
+    border-bottom:1px solid $l_Accent;
+    margin:0px 10px;
+}
+ul.nav li:hover{
+    background:$l_Accent;
 }
 div.signature h6{
-    font-weight: bolder;
-    font-family: cursive;
-    font-style: italic;
+    font-family:cursive;
     font-size:0.7em;
+    color:$p_text;
 }
 img.icon{
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
     border-radius: 50%;
 }
 ul.list{
@@ -130,7 +137,7 @@ div.contacts{
     left:50%;
     transform:translateX(-50%);
     text-align: center;
-    background:rgb(50,50,70);
+    background:$darkAccent;
     color:white;
     padding:20px 10px;
     bottom:0px;
@@ -161,9 +168,10 @@ div.reviews{
     overflow: hidden;
     left:50%;
     transform:translateX(-50%);
+    background: whitesmoke;
 }
 div.reviews h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial;
     font-weight: lighter;
     margin:20px 0px;
     display: block;
@@ -173,10 +181,12 @@ div.review{
     margin:0px 10px;
     min-width:250px;
     position: relative;
+    background:$p_text;
 }
 div.review h3{
     margin-bottom:10px;
     font-family: cursive;
+    display:block;
 }
 div.review p{
     margin-left:10px;
@@ -207,15 +217,22 @@ div.developer{
     max-width:800px;
     position: relative;
     left:50%;
+    margin: 20px 0px;
     transform:translateX(-50%);
-    margin:20px 0px;
-    background: white;
 }
 div.language{
-    padding:10px 5px;
+    margin-bottom: 20px;
+    color:$p_text;
+    border-left:1px solid $l_Accent;
+    background:$darkAccent;
+    padding-bottom: 10px;
 }
 div.language h3{
-    font-family:monospace;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    background:$l_Accent;
+    padding:10px;
+    margin:0px 0px;
 }
 div.language h4{
     font-family: Arial, Helvetica, sans-serif;
@@ -256,6 +273,7 @@ div.languages{
     }
     div.review p{
         padding:10px;
-        border-left:1px solid $secondary;
+        border-left:1px solid $l_Accent;
+        margin-bottom:50px;
     }
 }
