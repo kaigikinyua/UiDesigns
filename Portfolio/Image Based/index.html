@@ -123,12 +123,15 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos hic similique ratione dolore quam? Eveniet, quis, rerum nam modi beatae fugit nihil reprehenderit accusantium quae tempore totam, vitae sit eaque.</p>
             </div>
         </div>
-        <div class="reviewForm"></div>
-        <form action="" class="review">
+
+        <a href="#review"><div class="reviewForm" onclick="show('review')"></div></a>
+
+        <form id="review" action="" class="review">
             <input type="text" name="username" placeholder="Name..."/>
             <textarea name="message" id="" cols="30" rows="10" placeholder="type your message here"></textarea>
             <input type="submit" class="btn" value="Send"/>
         </form>
+
     </body>
     <script src="JS/useraction.js"></script>
 </html>

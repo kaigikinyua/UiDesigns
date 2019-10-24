@@ -10,7 +10,6 @@ div.project{
     padding:0px;
     background: $darkAccent;
     margin:20px 0px;
-    box-shadow:10px 5px 10px 5px rgb(30,30,30);
 }
 div.project h3{
     color:$p_text;
@@ -29,7 +28,23 @@ div.project p{
 }
 div.pDetails{
     padding:10px;
-    color:pink;
     font-family: monospace;
     font-weight:lighter;
+}
+div.project h4{
+    color:$p_text;
+    text-align: center;
+    padding:5px;
+}
+div.morePdetails{
+    position: relative;
+    animation:3s reveal 0s;
+    height:auto;
+}
+@keyframes reveal{
+    from{
+        height: 0px;
+    }to{
+        height:100px;
+    }
 }

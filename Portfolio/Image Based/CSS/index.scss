@@ -4,7 +4,7 @@
     margin:0px;
 }
 body{
-    background: $primary;
+    background: darken($primary,7%);
 }
 //put this section in shared.scss
 div.topnav{
@@ -192,12 +192,26 @@ div.review p{
     margin-left:10px;
     font-family: Arial, Helvetica, sans-serif;
 }
+div.reviewForm{
+    height:40px;
+    width:40px;
+    background:rgba(white,0.7);
+    position:fixed;
+    bottom:30px;
+    left:80%;
+    border-radius: 50%;
+    border:1px solid $l_Accent;
+}
 form.review{
-    max-width:800px;
-    display: none;
+    position:relative;
+    width:100%;
+    padding:30px 0px;
 }
 form.review input{
     display:block;
+    background:white;
+    border:none;
+    border-bottom: 1px solid $l_Accent;
     margin:10px 0px;
     min-width:300px;
     padding:10px;
@@ -212,6 +226,14 @@ form.review textarea{
     position: relative;
     left:50%;
     transform:translateX(-50%);
+}
+input.btn{
+    transition:0.5s;
+}
+input.btn:hover{
+    background:none;
+    border:1px solid $l_Accent;
+    color:$p_text;
 }
 div.developer{
     max-width:800px;

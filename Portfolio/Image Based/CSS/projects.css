@@ -11,8 +11,6 @@ div.project {
   padding: 0px;
   background: #0C0032;
   margin: 20px 0px;
-  -webkit-box-shadow: 10px 5px 10px 5px #1e1e1e;
-          box-shadow: 10px 5px 10px 5px #1e1e1e;
 }
 
 div.project h3 {
@@ -34,8 +32,38 @@ div.project p {
 
 div.pDetails {
   padding: 10px;
-  color: pink;
   font-family: monospace;
   font-weight: lighter;
+}
+
+div.project h4 {
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+div.morePdetails {
+  position: relative;
+  -webkit-animation: 3s reveal 0s;
+          animation: 3s reveal 0s;
+  height: auto;
+}
+
+@-webkit-keyframes reveal {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100px;
+  }
+}
+
+@keyframes reveal {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=projects.css.map */
