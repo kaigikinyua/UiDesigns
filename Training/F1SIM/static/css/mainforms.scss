@@ -1,0 +1,24 @@
+@import 'colors';
+@import 'align';
+form.mainform{
+    position: relative;
+    @include middleAlign;
+    max-width: 400px;
+    background: $accent;
+    padding:30px 10px;
+}
+form.mainform input{
+    position: relative;
+    display:block;
+    width:90%;
+    padding:10px;
+    border:none;
+    @include aligncenter;
+}
+input.text{
+    outline: none;
+    margin:10px 0px;
+}
+input.btn{
+    margin-top:30px;
+}

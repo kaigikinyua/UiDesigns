@@ -1,0 +1,32 @@
+form.mainform {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 400px;
+  background: rgba(10, 10, 10, 0.8);
+  padding: 30px 10px;
+}
+
+form.mainform input {
+  position: relative;
+  display: block;
+  width: 90%;
+  padding: 10px;
+  border: none;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+input.text {
+  outline: none;
+  margin: 10px 0px;
+}
+
+input.btn {
+  margin-top: 30px;
+}
+/*# sourceMappingURL=mainforms.css.map */

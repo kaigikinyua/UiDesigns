@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Userpage</title>
+    <link rel="stylesheet" href="../static/css/shared.css"/>
+    <link rel="stylesheet" href="../static/css/userpage.css"/>
+</head>
+<body>
+    <div class="topnav">
+        <div class="navicon" onclick="show('snavbar')">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div><h3><i>F1</i></h3><h4>Simulator</h4></div>
+    </div>
+    <div class="snavbar" id='snavbar'>
+        <div class="barner"><h3><i>F1</i></h3><h4>Simulator</h4></div>
+        <ul class="list">
+            <li class="navbutton">Race</li>
+            <li class="navbutton">Parts</li>
+            <li class="navbutton">Cars</li>
+            <li class="navbutton">Sponsers</li>
+            <li class="navbutton">Analysis</li>
+        </ul>
+    </div>
+    <div class="content">
+        <!--Chatroom-->
+        <div class="module" id='chatroom'>
+            <!--Script to fetch chats-->
+        </div>
+        <!--Contracts-->
+        <div class="module" id='contracts'>
+            <!--Script to fetch contracts-->
+        </div>
+        <!--Finances-->
+        <div class="finances" id='finances'>
+            <!--Script to fetch finances-->
+        </div>
+    </div>
+    <div class="bottomnav">
+        <div class="mOpen">ChatRoom</div>
+        <div class="mOpen">Contracts</div>
+        <div class="mOpen">Finances</div>
+    </div>
+    <script src="../static/js/elements.js"></script>
+</body>
+</html>
