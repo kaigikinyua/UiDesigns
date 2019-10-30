@@ -1,4 +1,8 @@
+@import 'align';
 @import 'colors';
+body{
+    overflow: hidden;
+}
 div.navicon{
     width:40px;
     height:40px;
@@ -47,6 +51,45 @@ div.barner h4{
 }
 div.snavbar ul.list{
     margin-top:30px;
+}
+div.pane{
+    position: relative;
+    width:95vw;
+    height:80vh;
+    margin-top:-20px;
+    background:whitesmoke;
+    padding:10px;
+    overflow-y: scroll;
+    display:none;
+    @include aligncenter;
+}
+div.active{
+    display: block;
+}
+div.bottomnav{
+    position:fixed;
+    width:100vw;
+    height:30px;
+    @include aligncenter;
+    padding:20px;
+    bottom:0px;
+    background:white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+button.mOpen{
+    border:none;
+    padding:5px 10px;
+    background:none;
+    color:black;
+    border:1px solid transparent;
+    outline:none;
+    border-radius: 10px;
+}
+button.active{
+    border-bottom:1px solid black;
+    background:black;
+    color:white;
 }
 @media only screen and (max-width:600px){
     div.snavbar{
