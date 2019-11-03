@@ -5,5 +5,11 @@
 
 .navicon {
   fill: green;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navicon:hover {
+  fill: red;
 }
 /*# sourceMappingURL=icons.css.map */

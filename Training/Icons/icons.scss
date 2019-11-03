@@ -4,4 +4,8 @@
 }
 .navicon{
     fill:green;
+    transition:1s;
+}
+.navicon:hover{
+    fill:red;
 }

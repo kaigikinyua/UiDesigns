@@ -6,5 +6,5 @@ function hide(id){
 }
 function switchpane(buttonid,paneid){
     show(id);
-    
+    document.querySelectorAll('')
 }

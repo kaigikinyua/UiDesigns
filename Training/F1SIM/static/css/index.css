@@ -29,16 +29,66 @@ div.contact div.module {
   max-width: 600px;
 }
 
-div.card {
+table.contacts {
+  color: white;
+}
+
+table.contacts td {
   padding: 10px;
-  color: whitesmoke;
+}
+
+div.card {
   position: relative;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  max-width: 300px;
+  max-height: 90%;
+  max-width: 90%;
   text-align: center;
   background: rgba(10, 10, 10, 0.8);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  min-height: 400px;
+}
+
+div.cardtext {
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+div.cardtext h3 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+div.cardtext button {
+  padding: 10px;
+  border: 1px solid transparent;
+  background: white;
+  color: black;
+  width: 100px;
+  border-radius: 10px;
+  position: relative;
+  margin: 30px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+div.cardtext button:hover {
+  background: none;
+  border: 1px solid white;
+  color: white;
+}
+
+div.cardimage {
+  background-image: url("../images/maxresdefault.jpg");
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=index.css.map */
