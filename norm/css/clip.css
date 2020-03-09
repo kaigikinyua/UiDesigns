@@ -1,0 +1,66 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: whitesmoke;
+}
+
+div.clip {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  margin: 20px;
+  -webkit-box-shadow: 4px 4px 10px 10px lightgray;
+          box-shadow: 4px 4px 10px 10px lightgray;
+}
+
+div.clip div.inner {
+  position: relative;
+  background: lightseagreen;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-clip-path: circle(0% at 0% 0%);
+          clip-path: circle(0% at 0% 0%);
+  -webkit-transition: -webkit-clip-path .5s ease-in;
+  transition: -webkit-clip-path .5s ease-in;
+  transition: clip-path .5s ease-in;
+  transition: clip-path .5s ease-in, -webkit-clip-path .5s ease-in;
+}
+
+div.clip:hover div.inner {
+  -webkit-clip-path: circle(100%);
+          clip-path: circle(100%);
+}
+
+div.clip div.outer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out;
+  font-family: fantasy;
+  background: lightcoral;
+  padding: 8px;
+  color: white;
+}
+
+div.clip:hover div.outer {
+  left: 100%;
+  opacity: 0;
+}
+
+div.clip:hover {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=clip.css.map */
