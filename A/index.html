@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+</head>
+<body>
+    <div class="sidenav min_sidenav" id="sidenav">
+        <ul class="menu">
+            <li><i class="fa fa-user"></i><small>Username</small></li>
+            <li><i class="fab fa-twitter"></i><small>Twitter</small></li>
+            <li><i class="fab fa-google"></i><small>Google</small></li>
+            <li><i class="fab fa-facebook-f"></i><small>Facebook</small></li>
+        </ul>
+        <div class="bottom">
+            <button class="nav" onclick="closeSideNav()"><i class="fa fa-arrow-left"></i></button>
+            <button class="nav" onclick="openSideNav()"><i class="fa fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <section class="landing active" id="landing">
+        <div class="container">
+            <h3 class="title">Hello World</h3>
+            <div class="card"></div>
+        </div>
+    </section>
+    <section class="deactive" id="about">
+        <div class="container">
+            <h3 class="title">About Us</h3>
+        </div>
+    </section>
+</body>
+<script src="/JS/dom.js"></script>
+</html>

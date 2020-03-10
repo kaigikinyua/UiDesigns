@@ -1,0 +1,119 @@
+$primary:#2f3542;
+$secondary:#F50057;
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background:$primary;
+    overflow: hidden;
+}
+div.sidenav{
+    position: fixed;
+    height: 100vh;
+    top:0px;
+    background:$secondary;
+    color:white;
+    box-shadow: 1px 1px 5px 5px black;
+    padding:10px;
+    z-index: 10;
+}
+.full_sidenav{
+   animation: 0.3s openNav 0s ease-out;
+    ul.menu li small{
+        display: inline;
+    }
+}
+.min_sidenav{
+    padding:5px;
+   animation: 0.5s closeNav 0s;
+}
+
+@keyframes openNav{
+    from{
+        width:50px;
+    }
+    to{
+        width:100px;
+    }
+}
+@keyframes closeNav{
+    from{
+        width:100px;
+    }
+    to{
+        width:30px;
+    }
+}
+
+ul.menu{
+    list-style: none;
+    margin-top:20px;
+    li{
+        margin:20px 0px;
+        font-size: 20px;
+        small{
+            display: none;
+            margin:0px 5px;
+        }
+    }
+}
+button{
+    border:none;
+    outline:none;
+    background:none;
+}
+.hidden{
+    display: none;
+}
+div.bottom{
+    position: absolute;
+    bottom:30px;
+    text-align: center;
+    button{
+        color:white;
+    }
+}
+
+section{
+    height: 100vh;
+    width:100vw;
+}
+section.landing{
+    position: relative;
+}
+section.active{
+    position: relative;
+    top:0px;
+    left:0px;
+    animation:1s activate_section 0s ease-in-out;
+}
+
+section.deactivate{
+    position: relative;
+    top:-100px;
+}
+@keyframes activate_section{
+    from{
+        top:-100%;
+    }
+    to{
+        top:0%;
+    }
+}
+
+
+div.container{
+    position: relative;
+    top:50%;left:50%;
+    height:80%;width:90%;
+    transform: translate(-50%,-50%);
+    background:darken($primary, 10);
+   // box-shadow: 1px 1px 10px 10px rgba(10,10,10,0.7);
+    border-radius: 20px;
+    padding: 10px;
+}
+h3.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
