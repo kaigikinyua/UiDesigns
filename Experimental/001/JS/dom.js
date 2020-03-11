@@ -23,6 +23,20 @@ window.onscroll=function(){
         })
     }
 }
+
+function curr_slide(){
+    var cards=document.querySelectorAll('.card_i')
+    for(var i=0;i<cards.length;i++){
+        cards[i].addEventListener("mouseover",(e)=>{
+            console.log(e.target)
+            var landing=document.getElementById('h_image')
+            landing.style.backgroundImage="url("+e.target.src+")"      
+        });
+    }
+}
+
+curr_slide()
+
 function openSideNav(){
     var sidenav=document.getElementById('sidenav');
     sidenav.classList.add('full_sidenav')
