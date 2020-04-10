@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="./chat.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="handle"><h3 class="title">My_Chat_App</h3></div>
+        <div class="nav"></div>
+    </div>
+    <section class="chat">
+        <div class="page">
+            <div class="messages"></div>
+            <div class="input">
+                <input id="message" type="text" class="text" placeholder="Message here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.js"></script>
+<script>
+    var socket=io.connect("http://localhost:5000")
+    //var socket=new WebSocket("ws://localhost:5000")
+    socket.on('message',(message)=>{
+        console.log("I got a message")
+        console.log(message)
+    })
+        
+    
+    function sendMessage(){
+    var input=document.getElementById('message')
+    socket.send("Hello world")
+}
+</script>
+</html>
