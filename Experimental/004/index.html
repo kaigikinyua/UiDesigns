@@ -13,15 +13,16 @@
     </div>
     <section class="chat">
         <div class="page">
+            <div class="events" id="events"></div>
             <div class="messages"></div>
             <div class="input">
-                <input id="message" type="text" class="text" placeholder="Message here...">
+                <input id="message" type="text" class="text" placeholder="Message here..." onclick="userTyping()">
                 <button onclick="sendMessage()">Send</button>
             </div>
         </div>
     </section>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.js"></script>
+<script src="./socket.io.js"></script>
 <script>
     var socket=io.connect("http://localhost:5000")
     //var socket=new WebSocket("ws://localhost:5000")
@@ -29,11 +30,19 @@
         console.log("I got a message")
         console.log(message)
     })
-        
+    socket.on('broadcast',(message)=>{
+        console.log(message)
+        var ev=document.getElementById('events')
+        ev.innerHTML=message
+    })    
     
     function sendMessage(){
     var input=document.getElementById('message')
     socket.send("Hello world")
-}
+    }
+    function userTyping(){
+        socket.emit("typing",{"username":"Browser"})
+    }
+
 </script>
 </html>

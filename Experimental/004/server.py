@@ -14,5 +14,11 @@ def handle_connection():
 def handle_message(message):
     print(f"Got the message {message}")
 
+@socketio.on('typing')
+def typing(data):
+    print(f"User {data['username']} is typing")
+    f_data=str(data['username'])+" is typing..."
+    emit('broadcast',f_data,broadcast=True)
+
 if __name__=="__main__":
     socketio.run(app)
