@@ -1,3 +1,12 @@
+//default colors
+$bg_default:#3498DB;
+$dark_bg:#2980b9;
+$fg_default:white;
+//dark
+$bg_dark:#2c3e50;
+$fg_dark:#3498DB;
+
+
 //reseting
 *{
     padding:0px;
@@ -18,13 +27,17 @@ body{
 a{
     text-decoration: none;
 }
-//default colors
-$bg_default:#3498DB;
-$dark_bg:#2980b9;
-$fg_default:white;
-//dark
-$bg_dark:#2c3e50;
-$fg_dark:#3498DB;
+::-webkit-scrollbar{
+    width:7px;
+    background:$bg_dark;
+}
+::-webkit-scrollbar-thumb{
+    width:9px;
+    background: $bg_default;
+}
+
+
+
 
 //text
 .title{
@@ -114,17 +127,19 @@ div.page{
 }
 div.colors{
     display: grid;
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(8,1fr);
+    overflow:scroll;
 }
 
 div.color{
-    height:80px;
-    width:80px;
+    height:120px;
+    width:120px;
     margin:10px;
     border-radius: 10px;
     color:white;
     transition:1s;
     overflow:hidden;
+    text-align: center;
 }
 div.color:hover{
     transform: scale(1.2);
@@ -136,10 +151,58 @@ p.color_text{
     transform: translateY(-50%);
     background:rgba(10,10,10,0.3);
     padding:5px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: lighter;
 }
+
+div.templates_page{
+    padding:10px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+div.template{
+    height:150px;
+    width:120px;
+    overflow: hidden;
+    border-radius: 10px;
+    div.template_color{
+        position: relative;
+        height:50px;
+        width:100%;
+        p{
+            font-size: 10px;
+            display: none;
+            color:white;
+        }
+    }
+    div.template_color:hover p{
+        display: block;
+    }
+}
+
+
+
+
 
 @media only screen and(max-width:700px){
     div.colors{
         grid-template-columns: repeat(3,1fr);
+    }
+    div.color{
+        height:80px;
+        width:100px;
+    }
+
+    div.templates_page{
+        grid-template-columns: repeat(3,1fr);
+        div.template{
+            width:100px;
+            height:100px;
+            margin:10px;
+            div.template_color{
+                height:33px;
+            }
+        }
     }
 }

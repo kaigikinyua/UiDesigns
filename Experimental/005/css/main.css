@@ -21,6 +21,16 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  background: #2c3e50;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 9px;
+  background: #3498DB;
+}
+
 .title {
   font-family: Arial;
   font-size: 22px;
@@ -124,19 +134,21 @@ div.page {
 div.colors {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  overflow: scroll;
 }
 
 div.color {
-  height: 80px;
-  width: 80px;
+  height: 120px;
+  width: 120px;
   margin: 10px;
   border-radius: 10px;
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
   overflow: hidden;
+  text-align: center;
 }
 
 div.color:hover {
@@ -152,12 +164,62 @@ p.color_text {
           transform: translateY(-50%);
   background: rgba(10, 10, 10, 0.3);
   padding: 5px;
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+div.templates_page {
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+}
+
+div.template {
+  height: 150px;
+  width: 120px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+div.template div.template_color {
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+div.template div.template_color p {
+  font-size: 10px;
+  display: none;
+  color: white;
+}
+
+div.template div.template_color:hover p {
+  display: block;
 }
 
 @media only screen and (max-width: 700px) {
   div.colors {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  div.color {
+    height: 80px;
+    width: 100px;
+  }
+  div.templates_page {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  div.templates_page div.template {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  div.templates_page div.template div.template_color {
+    height: 33px;
   }
 }
 /*# sourceMappingURL=main.css.map */
