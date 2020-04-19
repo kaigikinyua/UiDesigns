@@ -11,7 +11,7 @@ if(Debug==true){
 const hex = '0123456789ABCDEF'
 function randomColors() {
     var colors = []
-    for (var i = 0; i < 60; i++) {
+    for (var i = 0; i < 24; i++) {
         var j=0;var col="";
         while(j<6){
             col+=hex.charAt(Math.floor(Math.random() * hex.length))
