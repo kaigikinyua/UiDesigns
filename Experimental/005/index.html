@@ -13,12 +13,32 @@
     <div class="topnav">
         <div class="settings">
             <small onclick="changeContrast()"><i class="fa fa-adjust"></i></small>
-            <small ><i class="fa fa-question"></i></small>
+            <small onclick="show_about()"><i class="fa fa-question"></i></small>
         </div>
         <div class="barner">
             <h3 class="title">Hex<i>y</i></h3>
         </div>
     </div>
+
+    <div class="about_page" id="about">
+        <div class="barner">
+            <h3 class="title">Hex<i>y</i></h3>
+            <small>Light color picker</small>
+        </div>
+        <div class="about">
+            <p class="text">
+                Hexy is a small and lightweight color picker for frontend web developers.
+                Users can generate random colors, get pre picked colors and also save the colors they would like
+            </p>
+            <ul class="dev_contact">
+                <li><i class="fab fa-github"></i> kaigikinyua</li>
+                <li><i class="fab fa-reddit"></i>r/o_sider</li>
+                <li><i class="fab fa-twitter"></i>@tonnymacoin</li>
+            </ul>
+            <button class="cancel" onclick="hide_about()"><i class="fa fa-window-close"></i></button>
+        </div>
+    </div>
+
     <div class="navbar">
         <ul class="links">
             <a href="#random_page"><li><i class="fa fa-random"></i><small>Random</small></li></a>
@@ -44,6 +64,7 @@
             </div>
         </section>
     </section>
+    <input type="text" id="copy" hidden/>
 </body>
 <script src="./js/colors.js"></script>
 <script src="./js/app.js"></script>

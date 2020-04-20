@@ -73,6 +73,85 @@ div.topnav div.settings {
   color: white;
 }
 
+div.about_page {
+  position: fixed;
+  height: 100vh;
+  width: 400PX;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  background: white;
+  color: #2c3e50;
+  -webkit-clip-path: circle(400px at 0 0);
+          clip-path: circle(400px at 0 0);
+  display: none;
+}
+
+div.about_page div.barner {
+  text-align: center;
+}
+
+div.about_page .title {
+  color: #2980b9;
+}
+
+div.about_page .text {
+  padding: 10px;
+}
+
+div.about_page ul.dev_contact {
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.about_page ul.dev_contact li {
+  margin: 10px 0px;
+}
+
+div.about_page ul.dev_contact li i {
+  margin: 0px 10px;
+}
+
+div.about_page button.cancel {
+  position: relative;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 19px;
+  color: crimson;
+  left: 50px;
+}
+
+div.about_show {
+  -webkit-clip-path: circle(400px at 0, 0);
+          clip-path: circle(400px at 0, 0);
+  -webkit-animation: 1s about_display 0s ease-in;
+          animation: 1s about_display 0s ease-in;
+}
+
+@-webkit-keyframes about_display {
+  from {
+    -webkit-clip-path: circle(0px at 0 0);
+            clip-path: circle(0px at 0 0);
+  }
+  to {
+    -webkit-clip-path: circle(400px at 0 0);
+            clip-path: circle(400px at 0 0);
+  }
+}
+
+@keyframes about_display {
+  from {
+    -webkit-clip-path: circle(0px at 0 0);
+            clip-path: circle(0px at 0 0);
+  }
+  to {
+    -webkit-clip-path: circle(400px at 0 0);
+            clip-path: circle(400px at 0 0);
+  }
+}
+
 div.navbar {
   position: fixed;
   bottom: 0px;

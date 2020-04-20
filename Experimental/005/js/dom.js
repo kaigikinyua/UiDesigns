@@ -66,3 +66,17 @@ function changeBackground(className,color){
         }
     })
 }
+
+
+
+//about page
+function show_about(){
+    var about=document.getElementById('about')
+    about.style.display="block"
+    about.classList.add("about_show")
+}
+function hide_about(){
+    var about=document.getElementById('about')
+    about.classList.remove("about_show")
+    about.style.display="none"
+}

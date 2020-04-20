@@ -74,6 +74,61 @@ div.topnav{
     }
 }
 
+div.about_page{
+    position: fixed;
+    height: 100vh;width:400PX;
+    top:0px;left:0px;
+    z-index:1000;
+    background:white;
+    color:$bg_dark;
+    clip-path: circle(400px at 0 0);
+    display: none;
+    div.barner{
+        text-align: center;
+    }
+    .title{
+        color:$dark_bg;
+    }
+    .text{
+        padding:10px;
+    }
+    ul.dev_contact{
+        list-style: none;
+        padding:10px;
+        margin:10px;
+        li{
+            margin:10px 0px;
+            i{
+                margin:0px 10px;
+            }
+        }
+    }
+    button.cancel{
+        position: relative;
+        border:none;
+        background:none;
+        outline:none;
+        font-size: 19px;
+        color:crimson;
+        left:50px;
+    }
+}
+
+div.about_show{
+    clip-path: circle(400px at 0,0);
+    animation:1s about_display 0s ease-in;
+}
+
+@keyframes about_display{
+    from{
+        clip-path: circle(0px at 0 0);
+    }
+    to{
+        clip-path: circle(400px at 0 0);
+    }
+}
+
+
 div.navbar{
     position: fixed;
     bottom: 0px;
