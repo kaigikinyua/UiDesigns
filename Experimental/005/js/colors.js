@@ -2,7 +2,7 @@ const Debug=true
 var baseUrl=""
 //settings
 if(Debug==true){
-    baseUrl="http://192.168.0.134:5500/"
+    baseUrl="http://localhost:5500/"
 }else{
     console.log("Please set the live url")
 }

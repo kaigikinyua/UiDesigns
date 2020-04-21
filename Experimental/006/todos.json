@@ -1,0 +1,8 @@
+{
+    "pocketWeb":"A shortuct to your current project links",
+    "todos":[
+        {"todo":"UI/UX"},
+        {"todo":"Setup manifest and required for extension [images, etc]"},
+        {"todo":"Save url and retrieve to indexDB"}
+    ]
+}
