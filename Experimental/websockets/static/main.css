@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: lightgray;
+}
+
+div.topnav {
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  height: 50px;
+  background: lightcoral;
+  color: white;
+  padding: 10px;
+  font-family: Arial;
+  font-weight: lighter;
+}
+
+div.chat {
+  position: fixed;
+  bottom: 0px;
+  height: 80%;
+  width: 600px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+div.messages {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  background: white;
+  overflow-y: scroll;
+}
+
+div.input {
+  padding: 10px;
+  background: lightcoral;
+}
+
+div.input input {
+  padding: 5px;
+  display: block;
+}
+
+div.input button {
+  padding: 5px;
+  background: white;
+}
+
+div.incoming {
+  position: relative;
+  padding: 10px 5px;
+  max-width: 70%;
+  color: white;
+  margin: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #f5aeae;
+}
+
+div.outgoing {
+  position: relative;
+  left: 20%;
+  padding: 10px 5px;
+  max-width: 70%;
+  margin: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  background: lightseagreen;
+}
+/*# sourceMappingURL=main.css.map */

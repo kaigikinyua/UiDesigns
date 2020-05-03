@@ -1,0 +1,11 @@
+{
+	"links":[
+		{"link":"https://devdocs.io/go/net/index"},
+		{"link":"https://developer.mozilla.org/en-US/docs/Web/API/notification"},
+		{"link":"https://www.mono-project.com/docs/gui/gtksharp/beginners-guide/"},
+		{"link":"https://www.geeksforgeeks.org/python-working-with-docx-module/"},
+		{"link":"https://flask-socketio.readthedocs.io/en/latest/"},
+		{"link":"https://flask-socketio.readthedocs.io/en/latest/"},
+		{"link":"https://socket.io/docs/rooms-and-namespaces/"}
+	],
+}

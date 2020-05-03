@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>socketIO</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="topnav">
+        <h3 class="title">#channel0ne</h3>
+    </div>
+    <div class="chat">
+        <div class="messages" id="messages"></div>
+        <div class="input">
+            <input type="text" class="name" id="name">
+            <input type="text" class="message" id="message">
+            <button class="send" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+<!--script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script-->
+<script src="/socket.io.js"></script>
+<script src="/myclient.js"></script>
+</html>
