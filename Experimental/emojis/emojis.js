@@ -8,9 +8,11 @@ MessageBox.addEventListener('keyup',(e)=>{
 function sendMessage(){
     var messages=document.getElementById('messages')
     var bubble=document.createElement("div")
-    bubble.classList.add('sender')
-    bubble.innerHTML=message
+    bubble.classList.add('userMessage')
+    bubble.innerHTML="<p class='sender'>"+message+"</p>"
     messages.appendChild(bubble)
+    MessageBox.value=""
+    message=""
 }
 
 function addEmoji(unicode){
