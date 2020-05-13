@@ -1,0 +1,80 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: gray;
+}
+
+div.messenger {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 100vh;
+  width: 500px;
+}
+
+h3.reveiver {
+  padding: 20px;
+  color: white;
+  background: lightseagreen;
+  font-weight: lighter;
+}
+
+div.messages {
+  position: relative;
+  min-height: 70%;
+  background: white;
+  padding: 10px;
+}
+
+div.keyboard {
+  background: lightseagreen;
+  padding: 5px;
+}
+
+input.input {
+  background: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+div.emojis {
+  position: absolute;
+  background: white;
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+div.emojis small {
+  font-size: 20px;
+}
+
+button.icon {
+  background: white;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.hidden {
+  position: absolute;
+  bottom: -100%;
+}
+
+.show {
+  position: absolute;
+  bottom: 0;
+}
+/*# sourceMappingURL=styles.css.map */

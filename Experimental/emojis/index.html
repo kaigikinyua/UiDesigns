@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emoji</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="messenger">
+        <h3 class="receiver">James Bond</h3>
+        <div class="messages" id="messages">
+
+        </div>
+        <div class="keyboard">
+            <input class="input" type="emoji" placeholder="type here..." id="message" emoji/>
+            <div class="emojis hidden" id="emojiKeyBoard">
+                <script>
+                    var emojis=['128512','128513','128514','128515','128516','128517','128518','128519','128520','128521','128522','128523','128524','128525','128526','128527','128528','128528','128529','128530','128531']
+                    var keyboard=document.getElementById('emojiKeyBoard')
+                    emojis.forEach(emoji=>{
+                        var em=document.createElement("small")
+                        em.innerHTML="&#"+emoji+";"
+                        em.dataset["emoji"]="&#"+emoji+";"
+                        keyboard.appendChild(em)
+                    })
+                    keyboard.addEventListener('click',(e)=>{
+                        addEmoji(e.target.dataset['emoji'])
+                        hideElement('emojiKeyBoard')
+                    })
+                </script>
+            </div>
+            <button class="icon" onclick="showElement('emojiKeyBoard')">Emoji</button>
+            <button class="icon" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</body>
+<script src="emojis.js"></script>
+</html>
