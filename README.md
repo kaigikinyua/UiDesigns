@@ -6,9 +6,13 @@
 
 My project on a file sharing application. UI designs for both the desktop app and the web UI.
 
+### Application on a desktop screen
 ![Screenshot](GitImages/share/desktop.png)
+### Application on both laptop and phone
 ![Screenshot](GitImages/share/share.png)
+### Application viewed from a tablet
 ![Screenshot](GitImages/share/tab.png)
+### Desktop controller for the server
 ![Screenshot](GitImages/share/dashboard.png)
 
 ## Destination picker 
