@@ -1,11 +1,22 @@
 # Ui/Ux
 
 # HTML & CSS implementations
+
+## Pyn
+
+My project on a file sharing application. UI designs for both the desktop app and the web UI.
+
+![Screenshot](GitImages/share/desktop.png)
+![Screenshot](GitImages/share/share.png)
+![Screenshot](GitImages/share/tab.png)
+
+
 ## Destination picker 
 
 A simple traveller application ui landing page.
 
 ![Screenshot](GitImages/ui/1.png)
+![Screenshot](GitImages/ui/2.png)
 
 # Asure
 Asure Design Files
