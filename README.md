@@ -9,7 +9,7 @@ My project on a file sharing application. UI designs for both the desktop app an
 ![Screenshot](GitImages/share/desktop.png)
 ![Screenshot](GitImages/share/share.png)
 ![Screenshot](GitImages/share/tab.png)
-
+![Screenshot](GitImages/share/dashboard.png)
 
 ## Destination picker 
 
