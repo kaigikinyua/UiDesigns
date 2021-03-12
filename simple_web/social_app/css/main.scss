@@ -1,7 +1,9 @@
 //colors
 $prim:whitesmoke;
-$acc:lightseagreen;
-
+$acc:#2196f3;
+$light_acc:lighten($acc,10%);
+$dark_acc:darken($acc,30%);
+$shadow:rgba(13,50,153,0.1);
 //z-indexes
 $navs:3;
 $notifications:5;
@@ -15,6 +17,9 @@ $side_navs:4;
 @mixin center_h{
     left:50%;
     transform: translateX(-50%);
+}
+body{
+    background:lighten($light_acc,30%);
 }
 a{
     color:currentColor;
@@ -41,8 +46,10 @@ nav.topnav{
     top:0px;left:0px;
     width:100vw;
     height: 50px;
-    background:$prim;
     z-index: $navs;
+    background: $light_acc;
+    box-shadow: 1px 1px 10px 10px $shadow;
+    color:white;
 }
 .topnav .box{
     display: flex;
@@ -63,16 +70,16 @@ ul.links{
 //fonts
 .title{
     font-weight: lighter;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 .sub_title{
     font-weight: bolder;
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-bottom: 2em;
 }
 .sub_title::before{
     content:'#';
-    color:lightblue;
+    color:$acc;
     margin-right: 1em;
 }
 .paragraph{

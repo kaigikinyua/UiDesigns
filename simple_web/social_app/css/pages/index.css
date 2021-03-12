@@ -4,6 +4,10 @@
   font-family: Arial;
 }
 
+body {
+  background: #e3f2fd;
+}
+
 a {
   color: currentColor;
   text-decoration: none;
@@ -36,8 +40,11 @@ nav.topnav {
   left: 0px;
   width: 100vw;
   height: 50px;
-  background: whitesmoke;
   z-index: 3;
+  background: #51adf6;
+  -webkit-box-shadow: 1px 1px 10px 10px rgba(13, 50, 153, 0.1);
+          box-shadow: 1px 1px 10px 10px rgba(13, 50, 153, 0.1);
+  color: white;
 }
 
 .topnav .box {
@@ -68,18 +75,18 @@ ul.links li {
 
 .title {
   font-weight: lighter;
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 .sub_title {
   font-weight: bolder;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 2em;
 }
 
 .sub_title::before {
   content: '#';
-  color: lightblue;
+  color: #2196f3;
   margin-right: 1em;
 }
 
@@ -98,18 +105,21 @@ header div.content {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  -webkit-box-shadow: 1px 1px 30px 5px rgba(13, 50, 153, 0.1);
+          box-shadow: 1px 1px 30px 5px rgba(13, 50, 153, 0.1);
 }
 
 div.image {
   position: relative;
-  background: gray;
+  background: #064475;
   height: 50vw;
+  max-height: 80vh;
 }
 
 div.landing_text {
   background: whitesmoke;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +134,8 @@ div.landing_text {
 
 section.contacts {
   text-align: center;
-  background: gainsboro;
+  background: #2196f3;
+  color: white;
   height: 50vh;
 }
 
@@ -144,11 +155,13 @@ div.contacts_body h3.title {
 }
 
 .super_title {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: lighter;
+  color: #064475;
+  opacity: 0.8;
 }
 
 .card_paragraph {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 /*# sourceMappingURL=index.css.map */

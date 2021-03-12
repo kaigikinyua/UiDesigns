@@ -5,24 +5,27 @@ header div.content{
     transform: translateY(-50%);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    box-shadow: 1px 1px 30px 5px $shadow;
 }
 
 div.image{
     position: relative;
-    background:gray;
+    background:$dark_acc;
     height:50vw;
+    max-height: 80vh;
 }
 div.landing_text{
     background:whitesmoke;
     text-align: center;
-    padding:5px;
+    padding:10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 section.contacts{
     text-align: center;
-    background:darken($prim,10%);
+    background:$acc;
+    color:white;
     height: 50vh;
 }
 div.contacts_container{
@@ -36,9 +39,11 @@ div.contacts_body{
     }
 }
 .super_title{
-    font-size: 3em;
+    font-size: 4em;
     font-weight: lighter;
+    color:$dark_acc;
+    opacity: 0.8;
 }
 .card_paragraph{
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
