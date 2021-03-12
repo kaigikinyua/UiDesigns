@@ -1,0 +1,33 @@
+@import './main.scss';
+body{
+    background: $dark_acc;
+}
+div.loading{
+    position: absolute;
+    width:300px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height:20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.circ{
+    position: relative;
+    background:white;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+}
+div.loading :nth-child(0){ animation: 0.8s 0s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(1){ animation: 0.8s 0.1s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(2){ animation: 0.8s 0.2s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(3){ animation: 0.8s 0.3s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(4){ animation: 0.8s 0.4s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(5){ animation: 0.8s 0.5s bounce ease-in-out reverse infinite;}
+@keyframes bounce{
+    0%{top:0px;}
+    25%{top:100px;background:$acc;}
+    50%{top:100px;background:$acc;}
+    100%{top:0px;}
+}
