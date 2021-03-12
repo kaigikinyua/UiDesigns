@@ -1,0 +1,154 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.box {
+  position: relative;
+  max-width: 1200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.center_v {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.fullscreen {
+  height: 100vh;
+  width: 100vw;
+}
+
+nav.topnav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 50px;
+  background: whitesmoke;
+  z-index: 3;
+}
+
+.topnav .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+ul.links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+ul.links li {
+  margin: 0px 10px;
+}
+
+.title {
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+
+.sub_title {
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.sub_title::before {
+  content: '#';
+  color: lightblue;
+  margin-right: 1em;
+}
+
+.paragraph {
+  font-size: 1em;
+  margin: 1em;
+  word-spacing: 3px;
+}
+
+header div.content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+div.image {
+  position: relative;
+  background: gray;
+  height: 50vw;
+}
+
+div.landing_text {
+  background: whitesmoke;
+  text-align: center;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section.contacts {
+  text-align: center;
+  background: gainsboro;
+  height: 50vh;
+}
+
+div.contacts_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+div.contacts_body {
+  padding: 10px;
+}
+
+div.contacts_body h3.title {
+  margin-bottom: 20px;
+}
+
+.super_title {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.card_paragraph {
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=index.css.map */

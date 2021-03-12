@@ -1,0 +1,44 @@
+@import '../main.scss';
+header div.content{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.image{
+    position: relative;
+    background:gray;
+    height:50vw;
+}
+div.landing_text{
+    background:whitesmoke;
+    text-align: center;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+section.contacts{
+    text-align: center;
+    background:darken($prim,10%);
+    height: 50vh;
+}
+div.contacts_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+div.contacts_body{
+    padding:10px;
+    h3.title{
+        margin-bottom: 20px;
+    }
+}
+.super_title{
+    font-size: 3em;
+    font-weight: lighter;
+}
+.card_paragraph{
+    font-size: 1.2em;
+}
