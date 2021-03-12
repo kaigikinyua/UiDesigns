@@ -5,12 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pages/auth.css">
 </head>
 <body>
     <nav class="topnav">
         <div class="box">
-            <div class="header"></div>
-            <div class="links"></div>
+            <div class="header">
+                <h3 class="title">S.W.A | Login</h3>
+            </div>
+            <div class="links">
+                <ul class="links">
+                    <a href="#"><li>Login</li></a>
+                    <a href="#"><li>SignUp</li></a>
+                </ul>
+            </div>
         </div>
     </nav>
     <section class="full">
@@ -20,8 +29,14 @@
                     <h3 class="title">Login</h3>
                 </div>
                 <div class="inputs">
-                    <input type="text" class="text" placeholder="Email or Username">
-                    <input type="password" class="text" placeholder="Password">
+                    <div class="field">
+                        <small>Email or Username</small>
+                        <input type="text" class="text" placeholder="Email or Username">
+                    </div>
+                    <div class="field">
+                        <small>Password</small>
+                        <input type="password" class="text" placeholder="Password">
+                    </div>
                 </div>
                 <div class="button">
                     <button class="submit">Login</button>

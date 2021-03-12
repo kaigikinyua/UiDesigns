@@ -1,0 +1,96 @@
+div.form_container {
+  position: absolute;
+  width: 50%;
+  height: 70vh;
+  padding: 20px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+div.form_header {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+div.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input.text, button.submit {
+  position: relative;
+  padding: 7px 10px;
+  margin: 10px;
+  background: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+div.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  width: 300px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 10px 0px;
+}
+
+div.field small {
+  opacity: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+div.button {
+  text-align: left;
+}
+
+button.submit {
+  position: relative;
+  width: 300px;
+  margin-top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 10px 0px;
+}
+
+div.field:hover small {
+  opacity: 1;
+}
+
+div.field:hover input::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+div.field:hover input:-ms-input-placeholder {
+  opacity: 0;
+}
+
+div.field:hover input::-ms-input-placeholder {
+  opacity: 0;
+}
+
+div.field:hover input::placeholder {
+  opacity: 0;
+}
+/*# sourceMappingURL=auth.css.map */
