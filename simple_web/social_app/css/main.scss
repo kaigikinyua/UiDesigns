@@ -62,9 +62,46 @@ ul.links{
     justify-content: space-evenly;
     font-size: 1.2em;
     font-weight: lighter;
+    overflow: hidden;
     li{
-        margin:0px 10px; 
+        margin:0px 10px;
+        overflow:hidden; 
     }
+    li:after{
+        content:'';
+        position: absolute;
+        width: 0px;
+        height:3px;
+        background: white;
+        bottom:10px;
+        margin-left: -50px;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    a:hover li:after{
+        width:50px;
+    }
+}
+button{
+    padding:10px;
+}
+button.call_to_action{
+    border:1px solid transparent !important;
+}
+.icon_btn{
+    font-size: 1em;
+    color:$acc;
+    background:white;
+    border:1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 5px solid $shadow;
+    margin-left:10px;
+}
+.icon_btn:hover{
+    transform: scale(1.005);
+    border:1px solid $acc;
+    box-shadow: 1px 1px 10px 10px $shadow;
+    transition:0.5s;
 }
 
 //fonts
@@ -87,4 +124,55 @@ ul.links{
     margin:1em;
     //letter-spacing: 1px;
     word-spacing: 3px;
+}
+
+@keyframes reveal_left{
+    from{left:-100%;opacity: 0;transform:scale(0.5);}
+    to{left:0px;opacity: 1;}
+}
+@keyframes reveal_right{
+    from{left:100%;opacity: 0;transform:scale(0.5);}
+    to{left:0px;opacity: 1;}
+}
+
+
+
+//loading component
+
+section.loading{
+    position: fixed;
+    top:0px;left:0px;
+    height:100vh;
+    width:100vw;
+    background: $dark_acc;
+    z-index: 100;
+}
+div.loading{
+    position: absolute;
+    width:300px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    height:20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+div.circ{
+    position: relative;
+    background:white;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+}
+div.loading :nth-child(0){ animation: 0.8s 0s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(1){ animation: 0.8s 0.1s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(2){ animation: 0.8s 0.2s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(3){ animation: 0.8s 0.3s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(4){ animation: 0.8s 0.4s bounce ease-in-out reverse infinite;}
+div.loading :nth-child(5){ animation: 0.8s 0.5s bounce ease-in-out reverse infinite;}
+@keyframes bounce{
+    0%{top:0px;}
+    25%{top:100px;background:$acc;}
+    50%{top:100px;background:$acc;}
+    100%{top:0px;}
 }

@@ -73,6 +73,14 @@ ul.links li {
   margin: 0px 10px;
 }
 
+button {
+  padding: 10px;
+}
+
+button.call_to_action {
+  border: 1px solid transparent;
+}
+
 .title {
   font-weight: lighter;
   font-size: 1.6em;

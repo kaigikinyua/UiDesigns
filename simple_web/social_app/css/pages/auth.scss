@@ -1,3 +1,4 @@
+@import '../main.scss';
 div.form_container{
     position: absolute;
     width:50%;
@@ -8,11 +9,15 @@ div.form_container{
     transform: translateX(-50%);
     justify-content: space-evenly;
     text-align: center;
+    background:white;
+    box-shadow: 1px 1px 20px 20px $shadow;
 }
 
 div.form_header{
     padding:20px;
     margin-bottom: 20px;
+    font-size: 1.3em;
+    color:gray;
 }
 div.form{
     display: flex;
@@ -24,7 +29,11 @@ input.text,button.submit{
     margin:10px;
     background:none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 10px;
+    border:1px solid $acc;
+}
+input.text::placeholder{
+    color:$acc;
 }
 div.field{
     display: flex;
@@ -37,7 +46,8 @@ div.field{
     margin:10px 0px;
     small{
         opacity: 0;
-        transition:0.7s;
+        transition:0.3s;
+        color:$acc;
     }
 }
 div.button{
@@ -50,6 +60,14 @@ button.submit{
     left:50%;
     transform: translateX(-50%);
     margin:10px 0px;
+    background:$acc;
+    color:white;
+    transition:0.5s;
+}
+button.submit:hover{
+    background:white;
+    color:$acc;
+    box-shadow: 1px 1px 10px 10px $shadow;
 }
 div.field:hover{
     small{

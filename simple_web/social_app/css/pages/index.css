@@ -67,10 +67,58 @@ ul.links {
           justify-content: space-evenly;
   font-size: 1.2em;
   font-weight: lighter;
+  overflow: hidden;
 }
 
 ul.links li {
   margin: 0px 10px;
+  overflow: hidden;
+}
+
+ul.links li:after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  background: white;
+  bottom: 10px;
+  margin-left: -50px;
+  border-radius: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+ul.links a:hover li:after {
+  width: 50px;
+}
+
+button {
+  padding: 10px;
+}
+
+button.call_to_action {
+  border: 1px solid transparent !important;
+}
+
+.icon_btn {
+  font-size: 1em;
+  color: #2196f3;
+  background: white;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 5px 5px solid rgba(13, 50, 153, 0.1);
+          box-shadow: 1px 1px 5px 5px solid rgba(13, 50, 153, 0.1);
+  margin-left: 10px;
+}
+
+.icon_btn:hover {
+  -webkit-transform: scale(1.005);
+          transform: scale(1.005);
+  border: 1px solid #2196f3;
+  -webkit-box-shadow: 1px 1px 10px 10px rgba(13, 50, 153, 0.1);
+          box-shadow: 1px 1px 10px 10px rgba(13, 50, 153, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .title {
@@ -94,6 +142,58 @@ ul.links li {
   font-size: 1em;
   margin: 1em;
   word-spacing: 3px;
+}
+
+@-webkit-keyframes reveal_left {
+  from {
+    left: -100%;
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes reveal_left {
+  from {
+    left: -100%;
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes reveal_right {
+  from {
+    left: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes reveal_right {
+  from {
+    left: 100%;
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
 }
 
 header div.content {
@@ -130,6 +230,12 @@ div.landing_text {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+div.center_v {
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 100px;
 }
 
 section.contacts {
